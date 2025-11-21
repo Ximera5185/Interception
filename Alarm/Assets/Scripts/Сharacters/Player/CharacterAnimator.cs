@@ -8,7 +8,19 @@ public class CharacterAnimator : MonoBehaviour
     private readonly int Speed = Animator.StringToHash(nameof(Speed));
     private readonly int HorizontalMove = Animator.StringToHash(nameof(HorizontalMove));
     private readonly int VerticalMove = Animator.StringToHash(nameof(VerticalMove));
+    //[SerializeField] private bool _isAk;
 
+ /*   private void Update()
+    {
+        if (_isAk)
+        {
+            _animator.SetLayerWeight(1,1);
+        }
+        else
+        {
+            _animator.SetLayerWeight(1,0);
+        }
+    }*/
     public void Jump(bool isJumping)
     {
         _animator.SetBool(Jumping, isJumping);
